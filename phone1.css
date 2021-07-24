@@ -1,0 +1,163 @@
+
+body{
+    /* background-color: aquamarine; */
+}
+
+/* header */
+#header{
+    flex-direction: column;
+    justify-content: center;
+}
+#header .logo{
+    margin: auto;
+}
+
+.logo img{
+    width: 45px;
+}
+
+#cName {
+    display: none;
+}
+
+#navbar{
+    margin: 15px;
+    margin-top: 0px;
+}
+.navitem a{
+    font-size: 1.1rem;
+}
+/* home section */
+#home{
+    padding: 40px 70px;
+    box-sizing: border-box;
+    height: 402px;
+}
+#home p{
+    font-size: 1.18rem;
+}
+#home h2{
+    font-size: 2.14em;
+}
+#home::before{
+    height: 506.96px;
+}
+/* services section */
+.Services{
+    flex-direction: column;
+}
+
+.service{
+    margin: 10px 40px;
+}
+/* client section */
+.clients{
+    overflow: hidden;
+}
+
+/* contact us section */
+.input-box{
+    width: 80%;
+}
+
+#comments{
+    width: 77%;
+}
+/* media query */
+
+@media (max-width:700px) {
+    .clients{
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    #home{
+        padding: 40px 40px;
+    }
+    
+}
+
+@media (max-width: 435px) {
+    #navbar{
+        margin: 7px 1px;
+        margin-top: 0px;
+    }
+    #navbar li a{
+        font-size: 1rem;
+    }
+}
+ 
+@media (max-width: 400px) {
+    .logo img{
+        margin: 5px;
+    }
+    #navbar li a{
+        font-size: 12px;
+    }
+
+    #home{
+        height: ;
+    }
+
+    .service{
+        font-size: 1rem;
+        
+    }
+    .service img{
+        /* width: 60%; */
+        width: 195.26px;
+        height: 130.20px;
+        margin: 10px;
+        /* border-radius: 20px; */
+    }
+
+    
+}
+
+
+@media (max-width: 387px) {
+    #home{
+        height: 556px;
+    }
+    #home::before{
+        height: 642px;
+    }
+}
+
+@media (max-width: 305px) {
+    #navbar li a{
+        font-size: 10px;
+    }
+    .navitem a{
+        padding: 3px;
+        margin: 0px 2px;
+    }
+}
+
+@media (max-width:268px) {
+    .btn{
+        font-size: 18px;
+    }
+    #home{
+        height: 685px;
+    }
+    #home::before{
+        height: 770px;
+    }
+    #home h2{
+        font-size: 2rem;
+    }
+    .h1-primary{
+        font-size: 2.28rem;
+    }
+    .service h2{
+        font-size: 1.4rem;
+    }
+    .service img{
+        width: 190.26px;
+        height: 128px;
+    }
+} 
