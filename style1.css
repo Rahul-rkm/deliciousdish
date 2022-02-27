@@ -249,3 +249,19 @@ body{
     text-align: center;
 }
 
+/* Glowing logo */
+@keyframes rainglow {
+    form{
+        filter: hue-rotate(0deg);
+    }
+    to{
+        filter: hue-rotate(360deg);
+    }
+}
+
+#header .logo:hover{
+    animation: rainglow;
+    animation-duration: 2.6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
